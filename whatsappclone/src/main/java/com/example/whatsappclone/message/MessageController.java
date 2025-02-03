@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/messages")
 @RequiredArgsConstructor
-@Tag(name = "Message")
+
 public class MessageController {
 
     private final MessageService messageService;

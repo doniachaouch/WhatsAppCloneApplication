@@ -10,6 +10,11 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import static java.io.File.separator;
+import static java.lang.System.currentTimeMillis;
 
 @Service
 @Slf4j
@@ -64,4 +69,5 @@ public class FileService {
         }
         return fileName.substring(lastDotIndex + 1).toLowerCase();
     }
+
 }
